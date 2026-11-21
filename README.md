@@ -4,11 +4,14 @@ A responsive, no-build vanilla HTML/CSS/JavaScript website for The Handy Tech.
 
 ## Included
 
-- Security-installation-focused homepage with premium navy, amber and stone visual system.
+- Installation-first homepage with premium navy, amber and stone visual system.
 - Responsive navigation and mobile layout.
-- CCTV, alarm and access/perimeter solution pathways.
+- Six installation service pathways: CCTV, electric fencing, alarms, access control, gate automation and intercoms.
+- Six-stage installation process from enquiry through handover.
+- Residential and commercial application sections.
+- Installation gallery using clearly labelled illustrative imagery pending owner-supplied project photos.
 - Click-to-call and prefilled WhatsApp CTAs.
-- Quote enquiry form with native validation. Submitting the form creates a structured WhatsApp enquiry containing the entered details; no fake success state or third-party credentials are used.
+- Quote enquiry form with native validation. Submitting the form creates a structured WhatsApp enquiry containing the customer's name, telephone number, property type, project type, selected service, location and additional requirements.
 - SEO title, description, Open Graph metadata and semantic headings.
 
 ## Run locally

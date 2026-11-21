@@ -15,6 +15,12 @@ document.querySelectorAll('[data-service]').forEach((link) => link.addEventListe
   [...select.options].forEach((option) => { if (option.value === requested) select.value = requested; });
 }));
 
+document.querySelectorAll('[data-property]').forEach((link) => link.addEventListener('click', () => {
+  const select = document.querySelector('#property');
+  const requested = link.dataset.property;
+  [...select.options].forEach((option) => { if (option.value === requested) select.value = requested; });
+}));
+
 const form = document.querySelector('#quote-form');
 const status = document.querySelector('#form-status');
 form?.addEventListener('submit', (event) => {
@@ -27,12 +33,13 @@ form?.addEventListener('submit', (event) => {
   }
   const data = new FormData(form);
   const message = [
-    'Hi The Handy Tech, I would like to request a security quotation.',
+    'Hi The Handy Tech, I would like to request a security installation quotation.',
     '',
     `Name: ${data.get('name')}`,
     `Contact number: ${data.get('phone')}`,
     `Email: ${data.get('email') || 'Not provided'}`,
     `Property type: ${data.get('property')}`,
+    `Project type: ${data.get('project')}`,
     `Service: ${data.get('service')}`,
     `Installation location: ${data.get('location')}`,
     `Additional requirements: ${data.get('details') || 'None provided'}`
